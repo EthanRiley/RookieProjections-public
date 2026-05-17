@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rookie-projections"
+version = "0.1.0"
+description = "Dynasty fantasy football rookie draft projection model"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4",
+    "lxml",
+    "matplotlib",
+    "nfl_data_py",
+    "nflreadpy",
+    "numpy",
+    "pandas",
+    "polars",
+    "pymc",
+    "requests",
+    "scikit-learn",
+    "thefuzz",
+    "xgboost",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = [
+    "aggregation*",
+    "modeling*",
+    "viz*",
+    "scraping*",
+    "wrangling*",
+]

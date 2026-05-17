@@ -1,0 +1,10 @@
+beautifulsoup4
+lxml
+nfl_data_py
+nflreadpy
+pandas
+polars
+requests
+scikit-learn
+thefuzz
+xgboost
